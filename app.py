@@ -20,7 +20,7 @@ uploaded_file = st.file_uploader(
 )
 
 if uploaded_file is not None:
-    file_type = uploaded_file.name.split(".")[-1].lower()  #preprocessing
+    file_type = uploaded_file.name.split(".")[-1].lower()  # preprocessing
     st.info(f"Uploaded file type detected: `{file_type}`")
 
     text_data = ""  # Initialize variable to hold extracted text
